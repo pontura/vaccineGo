@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 0245be94057436d49a9b7daccf501e72
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: CG
+    100002: Head
+    100004: Jaw
+    100006: Jaw_end
+    100008: Jaw_end_end
+    100010: L Calf
+    100012: L Clavicle
+    100014: L Finger0
+    100016: L Finger0_end
+    100018: L Finger0_end_end
+    100020: L Foot
+    100022: L Foot_end
+    100024: L Foot_end_end
+    100026: L Forearm
+    100028: L Hand
+    100030: L HorseLink
+    100032: L Thigh
+    100034: L UpperArm
+    100036: Neck
+    100038: Neck1
+    100040: Neck2
+    100042: Pelvis
+    100044: R Calf
+    100046: R Clavicle
+    100048: R Finger0
+    100050: R Finger0_end
+    100052: R Finger0_end_end
+    100054: R Foot
+    100056: R Foot_end
+    100058: R Foot_end_end
+    100060: R Forearm
+    100062: R Hand
+    100064: R HorseLink
+    100066: R Thigh
+    100068: R UpperArm
+    100070: Spine
+    100072: Spine1
+    100074: Tail
+    100076: Tail1
+    100078: Tail2
+    100080: Tail2_end
+    100082: Tail2_end_end
+    100084: //RootNode
+    100086: TigerDragoPolyArt
+    100088: WingBone1L
+    100090: WingBone1L02
+    100092: WingBone1L03
+    100094: WingBone1L03_end
+    100096: WingBone1L03_end_end
+    100098: WingBone1R
+    100100: WingBone1R02
+    100102: WingBone1R03
+    100104: WingBone1R03_end
+    100106: WingBone1R03_end_end
+    100108: WingBone2L
+    100110: WingBone2L02
+    100112: WingBone2L03
+    100114: WingBone2L03_end
+    100116: WingBone2L03_end_end
+    100118: WingBone2R
+    100120: WingBone2R02
+    100122: WingBone2R03
+    100124: WingBone2R03_end
+    100126: WingBone2R03_end_end
+    100128: WingBoneL
+    100130: WingBoneR
+    400000: CG
+    400002: Head
+    400004: Jaw
+    400006: Jaw_end
+    400008: Jaw_end_end
+    400010: L Calf
+    400012: L Clavicle
+    400014: L Finger0
+    400016: L Finger0_end
+    400018: L Finger0_end_end
+    400020: L Foot
+    400022: L Foot_end
+    400024: L Foot_end_end
+    400026: L Forearm
+    400028: L Hand
+    400030: L HorseLink
+    400032: L Thigh
+    400034: L UpperArm
+    400036: Neck
+    400038: Neck1
+    400040: Neck2
+    400042: Pelvis
+    400044: R Calf
+    400046: R Clavicle
+    400048: R Finger0
+    400050: R Finger0_end
+    400052: R Finger0_end_end
+    400054: R Foot
+    400056: R Foot_end
+    400058: R Foot_end_end
+    400060: R Forearm
+    400062: R Hand
+    400064: R HorseLink
+    400066: R Thigh
+    400068: R UpperArm
+    400070: Spine
+    400072: Spine1
+    400074: Tail
+    400076: Tail1
+    400078: Tail2
+    400080: Tail2_end
+    400082: Tail2_end_end
+    400084: //RootNode
+    400086: TigerDragoPolyArt
+    400088: WingBone1L
+    400090: WingBone1L02
+    400092: WingBone1L03
+    400094: WingBone1L03_end
+    400096: WingBone1L03_end_end
+    400098: WingBone1R
+    400100: WingBone1R02
+    400102: WingBone1R03
+    400104: WingBone1R03_end
+    400106: WingBone1R03_end_end
+    400108: WingBone2L
+    400110: WingBone2L02
+    400112: WingBone2L03
+    400114: WingBone2L03_end
+    400116: WingBone2L03_end_end
+    400118: WingBone2R
+    400120: WingBone2R02
+    400122: WingBone2R03
+    400124: WingBone2R03_end
+    400126: WingBone2R03_end_end
+    400128: WingBoneL
+    400130: WingBoneR
+    4300000: TigerDragoPolyArt
+    9500000: //RootNode
+    13700000: TigerDragoPolyArt
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #407.001'
+    second: {fileID: 2100000, guid: fd2d71a9493900d4c9b853315f2689ca, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

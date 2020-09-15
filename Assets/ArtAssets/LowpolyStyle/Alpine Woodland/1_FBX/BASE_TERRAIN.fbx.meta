@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: eccf9e119e0441f4ca86f25d93871e60
+timeCreated: 1487885311
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: DoubleRock1
+    100002: pPlane10
+    100004: SharpRocks1
+    100006: WOODLAND_TEST
+    100008: //RootNode
+    100010: pPlane13
+    100012: pPlane15
+    100014: SharpRocks2
+    100016: SharpRocks3
+    100018: transform16
+    100020: transform17
+    100022: SharpRocks4
+    100024: SharpRocks5
+    400000: DoubleRock1
+    400002: pPlane10
+    400004: SharpRocks1
+    400006: WOODLAND_TEST
+    400008: //RootNode
+    400010: pPlane13
+    400012: pPlane15
+    400014: SharpRocks2
+    400016: SharpRocks3
+    400018: transform16
+    400020: transform17
+    400022: SharpRocks4
+    400024: SharpRocks5
+    2300000: DoubleRock1
+    2300002: pPlane10
+    2300004: SharpRocks1
+    2300006: WOODLAND_TEST
+    2300008: pPlane15
+    2300010: SharpRocks2
+    2300012: SharpRocks3
+    2300014: SharpRocks4
+    2300016: SharpRocks5
+    3300000: DoubleRock1
+    3300002: pPlane10
+    3300004: SharpRocks1
+    3300006: WOODLAND_TEST
+    3300008: pPlane15
+    3300010: SharpRocks2
+    3300012: SharpRocks3
+    3300014: SharpRocks4
+    3300016: SharpRocks5
+    4300000: pPlane10
+    4300002: SharpRocks1
+    4300004: DoubleRock1
+    4300006: WOODLAND_TEST
+    4300008: pPlane15
+    4300010: SharpRocks2
+    4300012: SharpRocks3
+    4300014: SharpRocks4
+    4300016: SharpRocks5
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
