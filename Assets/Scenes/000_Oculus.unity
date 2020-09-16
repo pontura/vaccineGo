@@ -4304,7 +4304,7 @@ PrefabInstance:
         type: 3}
       propertyPath: assetsBundleLoader
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 712443099}
     - target: {fileID: 114961008092855766, guid: 84b1bf466322a964fb172ebe2bb25ae9,
         type: 3}
       propertyPath: gameSettings
@@ -4317,6 +4317,11 @@ PrefabInstance:
     - target: {fileID: 708197249, guid: 84b1bf466322a964fb172ebe2bb25ae9, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114048511783348736, guid: 84b1bf466322a964fb172ebe2bb25ae9,
+        type: 3}
+      propertyPath: url
+      value: http://coding-arts.com/dermic/
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114048810592779086, guid: 84b1bf466322a964fb172ebe2bb25ae9, type: 3}
