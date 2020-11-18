@@ -10,7 +10,15 @@ public class Demo2 : MonoBehaviour
 
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Two))
+        if (OVRInput.GetDown(OVRInput.Button.One))
+        {
+            field.text = "One";
+        }
+        else if (OVRInput.GetDown(OVRInput.Button.Start))
+        {
+            field.text = "Start";
+        }
+        else if(OVRInput.GetDown(OVRInput.Button.Two))
         {
             field.text = "Two";
         }

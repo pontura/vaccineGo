@@ -27,8 +27,10 @@ public class PersistentData : MonoBehaviour {
 
     void Awake()
 	{
+#if UNITY_EDITOR
         if (DEBBUGER)
             PlayerPrefs.DeleteAll();
+#endif
         loadingMask.SetActive(false);
         Instance = this;
 		DontDestroyOnLoad (this.gameObject);

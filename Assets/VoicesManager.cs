@@ -109,9 +109,24 @@ public class VoicesManager : MonoBehaviour
         SetAvailableLang(1, PlayerPrefs.GetInt("lang_es"));
         SetAvailableLang(2, PlayerPrefs.GetInt("lang_ar"));
         SetAvailableLang(3, PlayerPrefs.GetInt("lang_se"));
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        if (
+                PlayerPrefs.GetInt("lang_en") == 0
+            && PlayerPrefs.GetInt("lang_es") == 0
+            && PlayerPrefs.GetInt("lang_ar") == 0
+            && PlayerPrefs.GetInt("lang_se") == 0
+            )
+        {
+            lang = "en";
+            SetAvailableLang(0, 1); // setea el ingles por defecto
+        }
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
     }
     public void ChangeAvailableLang(int arrayID, bool available)
     {
+        print("arrayID: " + arrayID + " available: " + available);
+
         string langName = "";
         switch (arrayID)
         {
@@ -159,6 +174,11 @@ public class VoicesManager : MonoBehaviour
         else
             VoicesManager.Instance.availableLangs[2].available = true;
 
+        if (lang_se == 0)
+            VoicesManager.Instance.availableLangs[3].available = false;
+        else
+            VoicesManager.Instance.availableLangs[3].available = true;
+
         foreach (VoicesManager.AvailableLang al in VoicesManager.Instance.availableLangs)
         {
             if (al.available)
@@ -187,14 +207,12 @@ public class VoicesManager : MonoBehaviour
     }
     AudioClip GetClip(AudioClipsByLang[] audioClipsByLangs, string lang, string audioName)
     {
-        Debug.Log("audioName " + audioName + " lalangIDg: " + lang);
         foreach (AudioClipsByLang audioClipsByLang in audioClipsByLangs)
         {
             if (audioClipsByLang.lang == lang)
             {
                 foreach (AudioClip ac in audioClipsByLang.clips)
                 {
-                    print(ac.name);
                     if(ac.name == audioName || ac.name.ToUpper() == audioName.ToUpper())
                     {
                         return ac;                       

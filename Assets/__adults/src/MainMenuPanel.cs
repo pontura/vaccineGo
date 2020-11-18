@@ -43,6 +43,7 @@ public class MainMenuPanel : MonoBehaviour
 
     void Start()
     {
+        Events.SceneLoaded();
         kidsButton.addEventOnClick(OnKidsPressed);
         adultsButton.addEventOnClick(OnAdultsPressed);
         timer = new XTimer();
@@ -176,24 +177,50 @@ public class MainMenuPanel : MonoBehaviour
         switch (type)
         {
             case InputManagerPontura.types.SWIPE_LEFT:
+                if (extra_state > 2) return;
+                if (GAME.vaccines == 1 && VoicesManager.Instance.GetTotalAvailableLangs()>1)
+                {
+                    GAME.vaccines--;
+                    VoicesManager.Instance.PlayAudio(0, "selectalanguage");
+                    return;
+                }
                 if (GAME.vaccines > 1)
                     GAME.vaccines--;
                 VoicesManager.Instance.PlayAudio(0, GAME.vaccines.ToString());
                 break;
             case InputManagerPontura.types.SWIPE_RIGHT:
+                if (extra_state > 2) return;
                 if (GAME.vaccines < 6)
                     GAME.vaccines++;
                 VoicesManager.Instance.PlayAudio(0, GAME.vaccines.ToString());
                 // SOUND.PlayLangUsingNativeLangIfExists(GAME.vaccines.ToString());
                 break;
             case InputManagerPontura.types.GATILLO_DOWN:
-                VoicesManager.Instance.PlayAudio(0, "ok");
-                extra_state = 2;
+                if(extra_state > 2) return;
+                if (GAME.vaccines == 0)
+                {
+                    Events.LoadScene("LangSelector");
+                    PersistentData.Instance.gameSettings = PersistentData.GameSettings.Adults;
+                    GAME.vaccines = 1;
+                    InputManagerPontura.Instance.OnInput -= OnInput;
+                }
+                else
+                {
+                    VoicesManager.Instance.PlayAudio(0, "ok");
+                    extra_state = 2;
+                }
                 break;
             case InputManagerPontura.types.TWO_BUTTONS_DOWN:
-                print("TWO_BUTTONS_DOWN");
-                PersistentData.Instance.gameSettings = PersistentData.GameSettings.Kids;
-                Events.LoadScene("LangSelector");
+                //si cambia:
+                if (extra_state > 2)
+                {
+                    PersistentData.Instance.gameSettings = PersistentData.GameSettings.Adults;
+                    Events.LoadScene("Adults");
+                }
+                else
+                    Events.LoadScene("Kids");
+                
+
                 InputManagerPontura.Instance.OnInput -= OnInput;
                 break;
         }

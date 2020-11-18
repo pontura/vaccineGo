@@ -322,7 +322,7 @@ public class ServerLogin : MonoBehaviour {
 #if UNITY_EDITOR
         if (PersistentData.Instance.DEBBUGER)
         {
-            LoadScene("Adults", 1);
+            LoadScene("Settings", 1);
             return;
         }
  #endif         

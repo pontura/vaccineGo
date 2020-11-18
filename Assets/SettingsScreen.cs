@@ -62,11 +62,17 @@ public class SettingsScreen : MonoBehaviour
     void Delayed()
     {
         if (gameID == 0)
+        {
             PersistentData.Instance.gameSettings = PersistentData.GameSettings.Kids;
+            Events.LoadScene("Kids");
+        }
         else
+        {
             PersistentData.Instance.gameSettings = PersistentData.GameSettings.Adults;
+            Events.LoadScene("Adults");
+        }
            
-        Events.LoadScene("LangSelector");
+       // Events.LoadScene("LangSelector");
     }
     public void ResetApp()
     {

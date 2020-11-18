@@ -134,8 +134,7 @@ public class TimeManager : Singleton<TimeManager>
     
     void ResetScene()
 	{
-        PersistentData.Instance.gameSettings = PersistentData.GameSettings.Adults;
-        Events.LoadScene("LangSelector");
+        Events.LoadScene("Kids");
     }
 	private void OnStateChangeHandler(GameState prev, GameState current) 
 	{

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45244026, g: 0.52534115, b: 0.6301377, a: 1}
+  m_IndirectSpecularColor: {r: 0.49323636, g: 0.5716987, b: 0.6808708, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3191,7 +3191,6 @@ GameObject:
   - component: {fileID: 381230856}
   - component: {fileID: 381230863}
   - component: {fileID: 381230864}
-  - component: {fileID: 381230865}
   m_Layer: 5
   m_Name: GAME_CANVAS
   m_TagString: Untagged
@@ -3411,21 +3410,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d4d1ab01e1b948e409bf7e8967770ec9, type: 3}
   - {fileID: 8300000, guid: aa13a7895580bcd4c841201c4cd27365, type: 3}
   - {fileID: 8300000, guid: 9b98d464de4d62341aa051d24f7c1f1a, type: 3}
---- !u!114 &381230865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381230855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72caf5deab08e0a48b5e06236d425a88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  button1Clicked: 0
-  button2Clicked: 0
 --- !u!4 &390104970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6707114691157789720, guid: 16e8d58f38a90f744be2fa22423dc690,
@@ -3644,13 +3628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e4b5f16b6c106419108ad91d0e14d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickMethod: 0
-  collisionClick: 0
-  autoActivatingCanvas: {fileID: 0}
-  hoveringElement: {fileID: 0}
-  hoverDurationTimer: 0
-  canClickOnHover: 0
-  pointerOriginTransform: {fileID: 0}
 --- !u!212 &416923235
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7963,6 +7940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856510319}
   - component: {fileID: 856510318}
+  - component: {fileID: 856510320}
   m_Layer: 0
   m_Name: mainGame
   m_TagString: Untagged
@@ -7996,6 +7974,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &856510320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856510317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72caf5deab08e0a48b5e06236d425a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  button1Clicked: 0
+  button2Clicked: 0
 --- !u!4 &857957167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5228793452007366573, guid: 70fe8eb80cecfc14497c671732681aae,
@@ -19420,14 +19413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702c704921b5abf4786866a5b87f46b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeadSetController: {fileID: 416923233}
-  controller0: {fileID: 1437642798196704}
-  controller1: {fileID: 1221238529100912}
-  cube: {fileID: 0}
-  normat: {fileID: 2100000, guid: c95d7ec236299944fa448bef49b89484, type: 2}
-  gazemat: {fileID: 2100000, guid: 3a2a4a14d26888e429bc4eb8b84f2374, type: 2}
-  clickmat: {fileID: 2100000, guid: fa7a26ea01645ab46a89d62420f831b8, type: 2}
-  rayDefaultLength: 4
 --- !u!1 &1529188632
 GameObject:
   m_ObjectHideFlags: 0
@@ -34459,13 +34444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a759ffbb5d38a34299acdc838caa342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power1: {fileID: 21300000, guid: ccf69d6b65b2c0449bfdaa76d1a456b1, type: 3}
-  power2: {fileID: 21300000, guid: fe4125dba63845e4aa93a3c71b9e8f98, type: 3}
-  power3: {fileID: 21300000, guid: 5a75b6a074ee1364e99a1574bf2c9d62, type: 3}
-  power4: {fileID: 21300000, guid: 49b5746886042fd49a247285d7f109b7, type: 3}
-  power5: {fileID: 21300000, guid: bc1ae3a2b76dc134da5ff051c0bd8afd, type: 3}
-  variety: 0
-  currentDevice: 0
 --- !u!114 &114061079354500522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34519,8 +34497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69cc9c55c14e704fa226f0848884eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 0
-  variety: 0
 --- !u!114 &114068681611404440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34562,13 +34538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a759ffbb5d38a34299acdc838caa342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power1: {fileID: 21300000, guid: ccf69d6b65b2c0449bfdaa76d1a456b1, type: 3}
-  power2: {fileID: 21300000, guid: fe4125dba63845e4aa93a3c71b9e8f98, type: 3}
-  power3: {fileID: 21300000, guid: 5a75b6a074ee1364e99a1574bf2c9d62, type: 3}
-  power4: {fileID: 21300000, guid: 49b5746886042fd49a247285d7f109b7, type: 3}
-  power5: {fileID: 21300000, guid: bc1ae3a2b76dc134da5ff051c0bd8afd, type: 3}
-  variety: 0
-  currentDevice: 0
 --- !u!114 &114086114498276534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34649,8 +34618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69cc9c55c14e704fa226f0848884eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 0
-  variety: 0
 --- !u!114 &114120552207969840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34663,13 +34630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb65d45f0dc2b1741af71e84b6de6c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goblin: {fileID: 1099359186213620}
-  neo: {fileID: 1921776427686644}
-  g2: {fileID: 1550015990422026}
-  neo2: {fileID: 1521972982512862}
-  standardMat: {fileID: 2100000, guid: 3c2d4982e1429ab4d8802c5363b6472e, type: 2}
-  unlitMat: {fileID: 2100000, guid: 1f39dae0e78c7c24480cf7313d3f6b3f, type: 2}
-  loadModelSuccess: 0
 --- !u!114 &114124614504969186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34798,11 +34758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc9962cbd1d42442a1d159b625a1008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Variety: 0
-  IsCustomModel: 0
-  dot: {fileID: 1391893771372022}
-  rayLine: {fileID: 1192847533684382}
-  controller: {fileID: 1585502316243372}
 --- !u!114 &114164026625586330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34815,20 +34770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e00f68f40fd0e644a8e184b4278b117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 0
-  m_idle: {fileID: 2800000, guid: 76eaf50acdd0d714ab19bd3a5f3d4a0a, type: 3}
-  m_app: {fileID: 2800000, guid: 9546b0050403dbb4cbea30b9f9556626, type: 3}
-  m_home: {fileID: 2800000, guid: 1f5a7fae4e6632d499c76472cc48d1af, type: 3}
-  m_touchpad: {fileID: 2800000, guid: 89dd6695243b14b4f96d1a9d7cfa788e, type: 3}
-  m_volUp: {fileID: 2800000, guid: 95ab99c73f8142549896d61692e66d7d, type: 3}
-  m_volDn: {fileID: 2800000, guid: 4ac4a9799db6d544191d4c285045958a, type: 3}
-  m_trigger: {fileID: 0}
-  m_a: {fileID: 0}
-  m_b: {fileID: 0}
-  m_x: {fileID: 0}
-  m_y: {fileID: 0}
-  m_grip: {fileID: 0}
-  variety: 0
 --- !u!114 &114168660968215246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34841,13 +34782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a759ffbb5d38a34299acdc838caa342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power1: {fileID: 21300000, guid: ccf69d6b65b2c0449bfdaa76d1a456b1, type: 3}
-  power2: {fileID: 21300000, guid: fe4125dba63845e4aa93a3c71b9e8f98, type: 3}
-  power3: {fileID: 21300000, guid: 5a75b6a074ee1364e99a1574bf2c9d62, type: 3}
-  power4: {fileID: 21300000, guid: 49b5746886042fd49a247285d7f109b7, type: 3}
-  power5: {fileID: 21300000, guid: bc1ae3a2b76dc134da5ff051c0bd8afd, type: 3}
-  variety: 0
-  currentDevice: 0
 --- !u!114 &114177464647506010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35306,20 +35240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e00f68f40fd0e644a8e184b4278b117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 3
-  m_idle: {fileID: 2800000, guid: ea680c6fa2e9689409b73309134a4f17, type: 3}
-  m_app: {fileID: 2800000, guid: d62c8e8ad3a1d6a4496912d274f13101, type: 3}
-  m_home: {fileID: 2800000, guid: edd7edd3376edb3478149aab9b675c6f, type: 3}
-  m_touchpad: {fileID: 2800000, guid: 03cd2d51f1f1b6143b6660603ff309ae, type: 3}
-  m_volUp: {fileID: 0}
-  m_volDn: {fileID: 0}
-  m_trigger: {fileID: 2800000, guid: 107409cff5b601b419ba05b6587af123, type: 3}
-  m_a: {fileID: 0}
-  m_b: {fileID: 0}
-  m_x: {fileID: 2800000, guid: fec57de5fb206044f992686be061f749, type: 3}
-  m_y: {fileID: 2800000, guid: 19a81dd1d0848f44e90abf75854b614f, type: 3}
-  m_grip: {fileID: 2800000, guid: a6dbdf71d8d175a4db48683fd2a394bb, type: 3}
-  variety: 0
 --- !u!114 &114266054465856906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35562,13 +35482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb65d45f0dc2b1741af71e84b6de6c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goblin: {fileID: 1260356729873212}
-  neo: {fileID: 1277334635069402}
-  g2: {fileID: 1998899685559018}
-  neo2: {fileID: 1957739991295906}
-  standardMat: {fileID: 2100000, guid: 3c2d4982e1429ab4d8802c5363b6472e, type: 2}
-  unlitMat: {fileID: 2100000, guid: 1f39dae0e78c7c24480cf7313d3f6b3f, type: 2}
-  loadModelSuccess: 0
 --- !u!114 &114298887322033998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35615,8 +35528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69cc9c55c14e704fa226f0848884eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 0
-  variety: 0
 --- !u!114 &114301757305367700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35629,13 +35540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a759ffbb5d38a34299acdc838caa342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power1: {fileID: 21300000, guid: ccf69d6b65b2c0449bfdaa76d1a456b1, type: 3}
-  power2: {fileID: 21300000, guid: fe4125dba63845e4aa93a3c71b9e8f98, type: 3}
-  power3: {fileID: 21300000, guid: 5a75b6a074ee1364e99a1574bf2c9d62, type: 3}
-  power4: {fileID: 21300000, guid: 49b5746886042fd49a247285d7f109b7, type: 3}
-  power5: {fileID: 21300000, guid: bc1ae3a2b76dc134da5ff051c0bd8afd, type: 3}
-  variety: 0
-  currentDevice: 0
 --- !u!114 &114303293853753952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35648,8 +35552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69cc9c55c14e704fa226f0848884eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 0
-  variety: 0
 --- !u!114 &114308412168207930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35885,20 +35787,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e00f68f40fd0e644a8e184b4278b117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 1
-  m_idle: {fileID: 2800000, guid: 0b90ed6c9674aab43ad4df7c2d31b7e6, type: 3}
-  m_app: {fileID: 2800000, guid: 8d949815cc3fd7442aaeb54f11de4e4b, type: 3}
-  m_home: {fileID: 2800000, guid: 1acc829062c3d2e4fa21cf0536e60ad8, type: 3}
-  m_touchpad: {fileID: 2800000, guid: d0a0011ed45c2ec40807eeb1bb2e287f, type: 3}
-  m_volUp: {fileID: 2800000, guid: 5a251d177399472489e12addab5f58c8, type: 3}
-  m_volDn: {fileID: 2800000, guid: fd3ed0f7ecb4b5846ae6dbb116a90b1d, type: 3}
-  m_trigger: {fileID: 2800000, guid: ccd41e87ae5813046b845337ba06f702, type: 3}
-  m_a: {fileID: 0}
-  m_b: {fileID: 0}
-  m_x: {fileID: 0}
-  m_y: {fileID: 0}
-  m_grip: {fileID: 0}
-  variety: 0
 --- !u!114 &114349691863926460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36061,20 +35949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e00f68f40fd0e644a8e184b4278b117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 2
-  m_idle: {fileID: 2800000, guid: d94fb996f92c63140a62c0abed3e8aaf, type: 3}
-  m_app: {fileID: 2800000, guid: 149e2e17afb7e0a42b0c31703e3227e5, type: 3}
-  m_home: {fileID: 2800000, guid: 694c651d4c938e84c92bf691092942af, type: 3}
-  m_touchpad: {fileID: 2800000, guid: 6b5da7e07bf5726458f21085c1498ea3, type: 3}
-  m_volUp: {fileID: 2800000, guid: ad3fcd18b5209c845b885a7e711646e4, type: 3}
-  m_volDn: {fileID: 2800000, guid: 06bba043f5af7c64f89679e496393681, type: 3}
-  m_trigger: {fileID: 2800000, guid: 40e0ec6c4f3937846bc343d8e3cbf6f7, type: 3}
-  m_a: {fileID: 0}
-  m_b: {fileID: 0}
-  m_x: {fileID: 0}
-  m_y: {fileID: 0}
-  m_grip: {fileID: 0}
-  variety: 0
 --- !u!114 &114363709096690310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36184,13 +36058,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a759ffbb5d38a34299acdc838caa342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power1: {fileID: 21300000, guid: ccf69d6b65b2c0449bfdaa76d1a456b1, type: 3}
-  power2: {fileID: 21300000, guid: fe4125dba63845e4aa93a3c71b9e8f98, type: 3}
-  power3: {fileID: 21300000, guid: 5a75b6a074ee1364e99a1574bf2c9d62, type: 3}
-  power4: {fileID: 21300000, guid: 49b5746886042fd49a247285d7f109b7, type: 3}
-  power5: {fileID: 21300000, guid: bc1ae3a2b76dc134da5ff051c0bd8afd, type: 3}
-  variety: 0
-  currentDevice: 0
 --- !u!114 &114395631373293332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36203,20 +36070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e00f68f40fd0e644a8e184b4278b117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 0
-  m_idle: {fileID: 2800000, guid: 76eaf50acdd0d714ab19bd3a5f3d4a0a, type: 3}
-  m_app: {fileID: 2800000, guid: 9546b0050403dbb4cbea30b9f9556626, type: 3}
-  m_home: {fileID: 2800000, guid: 1f5a7fae4e6632d499c76472cc48d1af, type: 3}
-  m_touchpad: {fileID: 2800000, guid: 89dd6695243b14b4f96d1a9d7cfa788e, type: 3}
-  m_volUp: {fileID: 2800000, guid: 95ab99c73f8142549896d61692e66d7d, type: 3}
-  m_volDn: {fileID: 2800000, guid: 4ac4a9799db6d544191d4c285045958a, type: 3}
-  m_trigger: {fileID: 0}
-  m_a: {fileID: 0}
-  m_b: {fileID: 0}
-  m_x: {fileID: 0}
-  m_y: {fileID: 0}
-  m_grip: {fileID: 0}
-  variety: 0
 --- !u!114 &114403264136246252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36437,13 +36290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e4b5f16b6c106419108ad91d0e14d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickMethod: 0
-  collisionClick: 0
-  autoActivatingCanvas: {fileID: 0}
-  hoveringElement: {fileID: 0}
-  hoverDurationTimer: 0
-  canClickOnHover: 0
-  pointerOriginTransform: {fileID: 0}
 --- !u!114 &114444622766011278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36577,8 +36423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69cc9c55c14e704fa226f0848884eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 0
-  variety: 0
 --- !u!114 &114469438258203224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37008,11 +36852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc9962cbd1d42442a1d159b625a1008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Variety: 1
-  IsCustomModel: 0
-  dot: {fileID: 1537758294551634}
-  rayLine: {fileID: 1256006588681768}
-  controller: {fileID: 1364874823941020}
 --- !u!114 &114539214142272430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37572,8 +37411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69cc9c55c14e704fa226f0848884eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 0
-  variety: 0
 --- !u!114 &114649555816274586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37736,20 +37573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e00f68f40fd0e644a8e184b4278b117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 1
-  m_idle: {fileID: 2800000, guid: 0b90ed6c9674aab43ad4df7c2d31b7e6, type: 3}
-  m_app: {fileID: 2800000, guid: 8d949815cc3fd7442aaeb54f11de4e4b, type: 3}
-  m_home: {fileID: 2800000, guid: 1acc829062c3d2e4fa21cf0536e60ad8, type: 3}
-  m_touchpad: {fileID: 2800000, guid: d0a0011ed45c2ec40807eeb1bb2e287f, type: 3}
-  m_volUp: {fileID: 2800000, guid: 5a251d177399472489e12addab5f58c8, type: 3}
-  m_volDn: {fileID: 2800000, guid: fd3ed0f7ecb4b5846ae6dbb116a90b1d, type: 3}
-  m_trigger: {fileID: 2800000, guid: ccd41e87ae5813046b845337ba06f702, type: 3}
-  m_a: {fileID: 0}
-  m_b: {fileID: 0}
-  m_x: {fileID: 0}
-  m_y: {fileID: 0}
-  m_grip: {fileID: 0}
-  variety: 0
 --- !u!114 &114707838044275378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37791,20 +37614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e00f68f40fd0e644a8e184b4278b117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 3
-  m_idle: {fileID: 2800000, guid: ea680c6fa2e9689409b73309134a4f17, type: 3}
-  m_app: {fileID: 2800000, guid: d62c8e8ad3a1d6a4496912d274f13101, type: 3}
-  m_home: {fileID: 2800000, guid: edd7edd3376edb3478149aab9b675c6f, type: 3}
-  m_touchpad: {fileID: 2800000, guid: 03cd2d51f1f1b6143b6660603ff309ae, type: 3}
-  m_volUp: {fileID: 0}
-  m_volDn: {fileID: 0}
-  m_trigger: {fileID: 2800000, guid: 107409cff5b601b419ba05b6587af123, type: 3}
-  m_a: {fileID: 2800000, guid: b455a454917cd8547a60f03214979c17, type: 3}
-  m_b: {fileID: 2800000, guid: eb1f6ecc830fdf649bdeb6d23eebdb2b, type: 3}
-  m_x: {fileID: 0}
-  m_y: {fileID: 0}
-  m_grip: {fileID: 2800000, guid: a6dbdf71d8d175a4db48683fd2a394bb, type: 3}
-  variety: 0
 --- !u!114 &114752495991834140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37846,20 +37655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e00f68f40fd0e644a8e184b4278b117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDevice: 2
-  m_idle: {fileID: 2800000, guid: d94fb996f92c63140a62c0abed3e8aaf, type: 3}
-  m_app: {fileID: 2800000, guid: 149e2e17afb7e0a42b0c31703e3227e5, type: 3}
-  m_home: {fileID: 2800000, guid: 694c651d4c938e84c92bf691092942af, type: 3}
-  m_touchpad: {fileID: 2800000, guid: 6b5da7e07bf5726458f21085c1498ea3, type: 3}
-  m_volUp: {fileID: 2800000, guid: ad3fcd18b5209c845b885a7e711646e4, type: 3}
-  m_volDn: {fileID: 2800000, guid: 06bba043f5af7c64f89679e496393681, type: 3}
-  m_trigger: {fileID: 2800000, guid: 40e0ec6c4f3937846bc343d8e3cbf6f7, type: 3}
-  m_a: {fileID: 0}
-  m_b: {fileID: 0}
-  m_x: {fileID: 0}
-  m_y: {fileID: 0}
-  m_grip: {fileID: 0}
-  variety: 0
 --- !u!114 &114772551625664246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38182,13 +37977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4eabe8c20b952949943a66c9c4801c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller0: {fileID: 1437642798196704}
-  controller1: {fileID: 1221238529100912}
-  Axis: 0
-  Gazetype: 1
-  ElbowHeight: 0
-  ElbowDepth: 0.05
-  PointerTiltAngle: 15
 --- !u!114 &114857299003895104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38276,13 +38064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a759ffbb5d38a34299acdc838caa342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power1: {fileID: 21300000, guid: ccf69d6b65b2c0449bfdaa76d1a456b1, type: 3}
-  power2: {fileID: 21300000, guid: fe4125dba63845e4aa93a3c71b9e8f98, type: 3}
-  power3: {fileID: 21300000, guid: 5a75b6a074ee1364e99a1574bf2c9d62, type: 3}
-  power4: {fileID: 21300000, guid: 49b5746886042fd49a247285d7f109b7, type: 3}
-  power5: {fileID: 21300000, guid: bc1ae3a2b76dc134da5ff051c0bd8afd, type: 3}
-  variety: 0
-  currentDevice: 0
 --- !u!114 &114897796029041372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38404,13 +38185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e4b5f16b6c106419108ad91d0e14d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickMethod: 0
-  collisionClick: 0
-  autoActivatingCanvas: {fileID: 0}
-  hoveringElement: {fileID: 0}
-  hoverDurationTimer: 0
-  canClickOnHover: 0
-  pointerOriginTransform: {fileID: 0}
 --- !u!114 &114922661969459664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38452,8 +38226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236af6823ed5bed4fa9704cf9cb74dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toast: {fileID: 114275561315089082}
-  LengthAdaptiveRay: 0
 --- !u!114 &114936715140371962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44134,7 +43906,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1373b1bff640c4c9d8db8fb4369176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  confirmBtn: 2
 --- !u!1 &454826717150876875
 GameObject:
   m_ObjectHideFlags: 0
@@ -44448,9 +44219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946531c816ce39479829be9a0a1da83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyeSide: 0
-  fadeTime: 5
-  fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
 --- !u!114 &454826717157948967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44463,9 +44231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946531c816ce39479829be9a0a1da83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyeSide: 2
-  fadeTime: 5
-  fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
 --- !u!114 &454826717157952005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44512,124 +44277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cbb386d8cfb5246af8cde62e00604f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reStartHead: 0
-  eyeVFov: 90
-  eyeHFov: 90
-  EyesAspect: 1
-  eyeTextures:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  eyeTextureIds: 000000000000000000000000000000000000000000000000
-  currEyeTextureIdx: 0
-  nextEyeTextureIdx: 1
-  overlayTextures:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  overlayTextureIds: 000000000000000000000000000000000000000000000000
-  overlayCamNum: 0
-  resetRot: 0
-  resetPos: 0
-  posStatus: 0
-  isPUI: 0
-  resetBasePos: {x: 0, y: 0, z: 0}
-  resetCol0Pos: {x: 0, y: 0, z: 0}
-  resetCol1Pos: {x: 0, y: 0, z: 0}
-  trackingmode: -1
-  systemprop: -1
-  systemFPS: 0
-  headData:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  rotfoldout: 0
-  hmdOnlyrot: 0
-  controllerOnlyrot: 0
-  trackingOrigin: 0
-  ResetTrackerOnLoad: 0
-  rtScaleFactor: 1
-  RenderviewNumber: 0
-  leftEyeOffset: {x: 0, y: 0, z: 0}
-  rightEyeOffset: {x: 0, y: 0, z: 0}
-  leftEyeRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  rightEyeRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  leftEyeView:
-    e00: 0
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 0
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 0
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 0
-  rightEyeView:
-    e00: 0
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 0
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 0
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 0
-  pvr_UnitySDKEditor: {fileID: 0}
-  vrModeEnabled: 1
-  Eyematerial: {fileID: 0}
-  Middlematerial: {fileID: 0}
-  newPicovrTriggered: 0
-  showFPS: 0
-  sixDofPosReset: 0
-  showSafePanel: 1
-  defaultRange: 1
-  customRange: 0.8
-  movingRatios: 1
-  screenFade: 0
-  neckOffset: {x: 0, y: 0.075, z: 0.0805}
-  pVRNeck: 1
-  UseCustomNeckPara: 0
-  onResume: 1
-  isEnterVRMode: 0
-  safeToast: {fileID: 0}
-  resetPanel: {fileID: 0}
-  isHasController: 0
-  monoscopic: 0
-  copyrightprotection: 0
 --- !u!114 &454826717157957955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44642,17 +44289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5485beee6e02bf54bbf709c2a2b400c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftEyeCamera: {fileID: 454826717152722225}
-  RightEyeCamera: {fileID: 434201592745062393}
-  MonoEyeCamera: {fileID: 454826717152761261}
-  BothEyeCamera: {fileID: 0}
-  FoveatedRendering: 0
-  foveationLevel: -1
-  FoveationGainValue: {x: 0, y: 0}
-  FoveationAreaValue: 0
-  FoveationMinimumValue: 0
-  EyeTracking: 0
-  eyePoint: {x: 0, y: 0, z: 0}
 --- !u!114 &454826717157990617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44665,9 +44301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 523735c088092894e8cb8fb1273c2db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackRotation: 1
-  trackPosition: 1
-  target: {fileID: 0}
 --- !u!114 &454826717157992423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44680,7 +44313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d69028670009c4d8f7f201223b3fbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fpsText: {fileID: 454826717157952005}
 --- !u!222 &454826717172977637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -44741,9 +44373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a946531c816ce39479829be9a0a1da83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyeSide: 1
-  fadeTime: 5
-  fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
 --- !u!1001 &1281511145306087547
 PrefabInstance:
   m_ObjectHideFlags: 0

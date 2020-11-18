@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Adults.unity
     guid: 9448528c42119b24a97fc6c90a418817
+  - enabled: 1
+    path: Assets/Scenes/Goto.unity
+    guid: e81f9396dd8d9ac40ad125f93b46e068
   m_configObjects: {}

@@ -84,12 +84,16 @@ public class Data : MonoBehaviour {
     }
     void SetVacunasNum(int qty)
 	{
-       
-
         num_of_vaccines += qty;
-		if (num_of_vaccines < 1)
+        if (num_of_vaccines < 1 && VoicesManager.Instance.GetTotalAvailableLangs() > 1)
+        {
+            VoicesManager.Instance.PlayAudio(0, "selectalanguage");
+            num_of_vaccines = 0;
+            return;
+        }
+        else if (num_of_vaccines < 1)
             num_of_vaccines = 1;
-		else if (num_of_vaccines > totalVacunas)
+        else if (num_of_vaccines > totalVacunas)
             num_of_vaccines = totalVacunas;
 
 		PlayNum (num_of_vaccines);
@@ -138,7 +142,7 @@ public class Data : MonoBehaviour {
             PersistentData.Instance.num_of_vaccines = num_of_vaccines;
             yield return new WaitForSeconds(1.2f);
             PlayNum(num_of_vaccines);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1.7f);
             NextScene();
         }
 	}
@@ -170,14 +174,21 @@ public class Data : MonoBehaviour {
                 SwipeLeft ();
 			break;
 		case InputManagerPontura.types.GATILLO_DOWN:
-                if (!isDone  && timer > 3)
-				StartCoroutine( Done() );
+                if (!isDone && timer > 3)
+                { 
+                    if(num_of_vaccines == 0)
+                    {
+                        PersistentData.Instance.gameSettings = PersistentData.GameSettings.Kids;
+                        Events.LoadScene("LangSelector");
+                    } else
+                    StartCoroutine(Done());
+                }
 			break;
         case InputManagerPontura.types.TWO_BUTTONS_DOWN:
             if (timer > 1)
             {
                 PersistentData.Instance.gameSettings = PersistentData.GameSettings.Adults;
-                Events.LoadScene("LangSelector");
+                Events.LoadScene("Adults");
             }
             break;
         }

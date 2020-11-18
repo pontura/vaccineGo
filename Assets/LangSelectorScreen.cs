@@ -5,20 +5,26 @@ using UnityEngine.UI;
 
 public class LangSelectorScreen : MonoBehaviour
 {
+    public Text fieldTitle;
     public Text field;
     InputManagerPontura inputManagerPontura;
     void Start()
     {
+        field.text = "";
+        fieldTitle.text = "";
         Events.SceneLoaded();
         print("VoicesManager.Instance.GetTotalAvailableLangs(): " + VoicesManager.Instance.GetTotalAvailableLangs()); 
         if (VoicesManager.Instance.GetTotalAvailableLangs() < 2)
             GoToGame();
         else
         {
+            fieldTitle.text = "Select a Language";
             inputManagerPontura = GetComponent<InputManagerPontura>();
             inputManagerPontura.OnInput += OnInput;
-            VoicesManager.Instance.PlayAudio(0, "selectalanguage");
+            //VoicesManager.Instance.PlayAudio(0, "selectalanguage");
+            SetField();
         }
+
     }
     private void OnDestroy()
     {
@@ -61,6 +67,11 @@ public class LangSelectorScreen : MonoBehaviour
         print(langID);
         PersistentData.Instance.SetLang(langID);
         VoicesManager.Instance.PlayAudio(0, VoicesManager.Instance.lang.ToString().ToLower());
+        SetField();
+    }
+    void SetField()
+    {
+        field.text = VoicesManager.Instance.lang.ToString();
     }
     void GoToGame()
     {

@@ -20,7 +20,7 @@ public class InputManagerPontura : Singleton<InputManagerPontura>
 		SWIPE_RIGHT
     }
 
-	float timerPad;
+	float timer;
 	bool padDown;
 	bool gatilloDown;
 	float axis;
@@ -112,12 +112,23 @@ public class InputManagerPontura : Singleton<InputManagerPontura>
         //return;
         //////////////////////////////
 
-
-
-        if (OVRInput.GetDown(OVRInput.Button.Two))
+        //Doble click:
+        if ( OVRInput.GetDown(OVRInput.Button.Two))
         {
-            SetNewGesto(types.TWO_BUTTONS_DOWN);
+            if(timer+0.75f > Time.time)
+                SetNewGesto(types.TWO_BUTTONS_DOWN);
+            timer = Time.time;
         }
+        //else if ( OVRInput.Get(OVRInput.Button.Two))
+        //{
+        //    timer += Time.deltaTime;
+        //    if (timer > 2)
+        //    {
+        //        SetNewGesto(types.TWO_BUTTONS_DOWN);
+        //        timer = -1000;
+        //    }
+        //    return;
+        //}
         else if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
         {
             SetNewGesto(types.GATILLO_DOWN);

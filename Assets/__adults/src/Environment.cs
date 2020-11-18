@@ -13,7 +13,7 @@ public class Environment : MonoBehaviour
     {
         get
         {
-            if (_me == null)
+           // if (_me == null)
                 _me = GameObject.FindObjectOfType<Environment>();
 
             return _me;

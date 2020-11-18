@@ -74,6 +74,21 @@ public class MainGame : MonoBehaviour
 
     void Start()
     {
+        VACCINES_SELECTION = false;
+        CODE_LOADED = false;
+        beQuietVarOnce = false;
+          extractionLvlCount = 0;
+         BLOCK_SPECIAL_MODE = true;
+        TIMES_UP = false;
+
+        
+    STATE = 0;
+        SUB_STATE = 0;
+        GAME_STATE = 0;
+        extra_state = 0;
+
+        RESET_GAME();
+
         GameObject config_obj;
         if (CODE_LOADED)
             return;
@@ -124,16 +139,11 @@ public class MainGame : MonoBehaviour
         SUB_STATE =     SubState.SetupAll;
         GAME_STATE =    0;
         extra_state =   0;
-
-      //  InputManagerPontura.Instance.OnInput += OnInput;
-
+        
         VRLauncher.me.SetAutoRelaunch(false);
     }
-    //void OnDestroy()
-    //{
-    //    InputManagerPontura.Instance.OnInput -= OnInput;
-    //}
-   public  float timerNum = 0;
+  
+    public  float timerNum = 0;
     //void OnInput(InputManagerPontura.types type)
     //{
     //    if (timerNum > 2)
